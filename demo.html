@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box{
+            position: relative;
+            width: 1380px;
+            height: 350px;
+            margin: 0 auto;
+        }
+        #imgBox{
+            position: absolute;
+            width: 1380px;
+            height: 350px;
+            overflow: hidden;
+        }
+        #imgBox img{
+            position: absolute;
+        }
+        #btn{
+            position: absolute;
+            z-index: 3;
+            width: 100%;
+            margin-top: 160px;
+        }
+        #btn img:first-child{
+            float: left;
+            width: 40px;
+            height: 40px;          
+        }
+        #btn img:last-child{
+            float: right;
+            width: 40px;
+            height: 40px;           
+        }
+        #listItems{
+            position: absolute;
+            z-index: 3;
+            width: 200px;
+            top:300px;
+            left:590px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #listItems a{
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color:white;
+            background-color: rgba(50, 50, 50, 0.5);
+            line-height: 40px;
+            text-align: center;
+        }
+        #left,#right{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="imgBox">
+            <img src="http://img.zcool.cn/community/01c5795a9ca760a8012195863e4785.jpg@1380w" alt="" id="1">
+            <img src="http://img.zcool.cn/community/01e52e5a98b301a801219586117996.jpg@1380w" alt="" id="2">
+            <img src="http://img.zcool.cn/community/01f0a75a9cabd7a801206d965d3dab.png@1380w" alt="" id="3">
+            <img src="http://img.zcool.cn/community/014d045a9cabeca801206d96b160ad.png@1380w" alt="" id="3">
+        </div>
+        <div id="btn">
+            <img src="left.png" alt="" id="left">
+            <img src="right.png" alt="" id="right">
+        </div>
+        <div id="listItems">
+            <a >1</a>
+            <a >2</a>
+            <a >3</a>
+            <a >4</a>
+        </div>
+    </div>
+</body>
+<script src="../jquery-3.2.1.min.js"></script>
+<script src="jQuery.lb.js"></script>
+<script>
+ $("imgBox").lb({
+     autoPlay:true,
+     leftBtn:$("#left"),
+     rightBtn:$("#right"),
+     listItems:$("#listItems"),
+     img:$("img")
+ })
+</script>
+</html>
