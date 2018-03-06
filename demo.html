@@ -16,10 +16,10 @@
             position: absolute;
             width: 1380px;
             height: 350px;
-            overflow: hidden;
+            overflow: hidden;           
         }
         #imgBox img{
-            position: absolute;
+            position: absolute;       
         }
         #btn{
             position: absolute;
@@ -64,10 +64,10 @@
 <body>
     <div id="box">
         <div id="imgBox">
-            <img src="http://img.zcool.cn/community/01c5795a9ca760a8012195863e4785.jpg@1380w" alt="" id="1">
-            <img src="http://img.zcool.cn/community/01e52e5a98b301a801219586117996.jpg@1380w" alt="" id="2">
-            <img src="http://img.zcool.cn/community/01f0a75a9cabd7a801206d965d3dab.png@1380w" alt="" id="3">
-            <img src="http://img.zcool.cn/community/014d045a9cabeca801206d96b160ad.png@1380w" alt="" id="3">
+            <img src="http://img.zcool.cn/community/01c5795a9ca760a8012195863e4785.jpg@1380w" id="1">
+            <img src="http://img.zcool.cn/community/01e52e5a98b301a801219586117996.jpg@1380w" id="2">
+            <img src="http://img.zcool.cn/community/01f0a75a9cabd7a801206d965d3dab.png@1380w" id="3">
+            <img src="http://img.zcool.cn/community/014d045a9cabeca801206d96b160ad.png@1380w" id="4">
         </div>
         <div id="btn">
             <img src="left.png" alt="" id="left">
@@ -89,7 +89,7 @@
      leftBtn:$("#left"),
      rightBtn:$("#right"),
      listItems:$("#listItems"),
-     img:$("img")
+     img:$("#imgBox")
  })
 </script>
 </html>
